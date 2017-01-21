@@ -1,29 +1,51 @@
 /********** Base styles **********/
-* {
+* {font-family: sans-serif;
   box-sizing: border-box;
 }
-h1 {
+h1 {text-align: center;
   margin-bottom: 15px;
 }
-p {
-  border: 1px solid black;
-  background-color: #A52A2A;
+
+.p {
+  border: 2px solid black;
+  background-color: #BCB5B3;
   width: 90%;
   height: 150px;
   margin-right: auto;
   margin-left: auto;
-  font-family: Helvetica;
-  color: white;
+  font-family: cursive;
+  color: black;
+  position: relative;
+margin-top: 30px;}
+.p1 {position: absolute;
+  border:2px solid black;
+  height :50px;
+  width:140px;
+  background-color: blue;
+  margin:0px;
+  top:0px;
+  right: 0px;
+  text-align: center;
+  padding-top: 12px;
+}
+.p1.p2 {background-color: #F97D09}
+.p1.p3 {background-color: #4BA6D8}
+.p1.p4 {background-color: #7DD84B}
+
+.p12 {position: absolute;
+  top:52px;
+  right: 0px;
+  text-align: left;
 }
 /* Simple Responsive Framework. */
 .row {
   width: 100%;
 }
-/********** Large devices only **********/
-@media (min-width: 1200px) {
+/********** Desktop only **********/
+@media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    border: 1px solid green;
+    
   }
   .col-lg-1 {
     width: 8.33%;
@@ -62,11 +84,11 @@ p {
     width: 100%;
   }
 }
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
+/********** Tablet only **********/
+@media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid green;
+    
   }
   .col-md-1 {
     width: 8.33%;
@@ -103,6 +125,10 @@ p {
   }
   .col-md-12 {
     width: 100%;
+
   }
+ .test{
+  width: 95%;
+ }
 }
 
